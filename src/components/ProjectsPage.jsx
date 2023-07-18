@@ -1,0 +1,25 @@
+// import React from "react"
+import ProjectCard from "./Project";
+import { Transitions } from "./Transitions";
+import { data } from "../data/projectsData";
+
+export default function ProjectsPage() {
+  const projectMap = data.map((data) => {
+    return (
+      <ProjectCard
+        key={data.id}
+        name={data.name}
+        description={data.description}
+        liveSnapshot={data.liveSnapshot}
+        liveLink={data.liveLink}
+        gitHubLink={data.gitHubLink}
+      />
+    );
+  });
+
+  return (
+    <Transitions>
+      <div className="project--container">{projectMap}</div>
+    </Transitions>
+  );
+}
