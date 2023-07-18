@@ -48,12 +48,14 @@ body::-webkit-scrollbar {
   width: 90%;
   margin-top: 12px;
   cursor: pointer;
+  transition: 0.2s;
 }
 
 .btnHover:hover {
   background-color: #24ff3a;
   color: black;
   font-weight: 600;
+  transition: 0.2s;
 }
 
 .header--container {
