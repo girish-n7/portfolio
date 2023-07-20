@@ -1,6 +1,5 @@
 // import React from "react"
 import ProjectCard from "./Project";
-import { Transitions } from "./Transitions";
 import { data } from "../data/projectsData";
 
 export default function ProjectsPage() {
@@ -17,9 +16,5 @@ export default function ProjectsPage() {
     );
   });
 
-  return (
-    <Transitions>
-      <div className="project--container">{projectMap}</div>
-    </Transitions>
-  );
+  return <div className="project--container">{projectMap}</div>;
 }

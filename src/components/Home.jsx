@@ -1,10 +1,17 @@
 // import React from "react";
 import Button from "./Button";
-import { Transitions } from "./Transitions";
+import { TypeAnimation } from "react-type-animation";
 
 export default function Home() {
   return (
-    <Transitions>
+    <div className="home--main">
+      <div className="home--hero">
+        <p>Hi, I&#39;m Girish.</p>
+        <TypeAnimation
+          sequence={["I'm a Full stack Developer", 1000]}
+          speed={5}
+        />
+      </div>
       <div className="home--container">
         <p className="home--question">What do you want to do?</p>
         <div className="home--options">
@@ -13,6 +20,6 @@ export default function Home() {
           <Button content="Contact me" route="/contact" />
         </div>
       </div>
-    </Transitions>
+    </div>
   );
 }
