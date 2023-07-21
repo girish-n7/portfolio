@@ -98,7 +98,27 @@ a {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding-left: 20px;
+  padding-bottom: 30px;
   font-size: 2.1rem;
+}
+
+.hero--img {
+  height: 270px;
+  aspect-ratio: 1/1;
+  background-image: url("./assets/images/hero-aft.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  padding: 10px;
+  transition: 0.2s;
+  cursor: pointer;
+}
+
+.hero--img:hover {
+  background-image: url("./assets/images/hero-bef.svg");
+  transform: scale(0.4);
+  transition: 0.4s;
 }
 
 .home--container {
@@ -112,6 +132,7 @@ a {
   justify-content: center;
   float: right;
   text-align: center;
+  padding-right: 20px;
 }
 
 .home--options {

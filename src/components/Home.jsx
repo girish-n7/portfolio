@@ -6,6 +6,7 @@ export default function Home() {
   return (
     <div className="home--main">
       <div className="home--hero">
+        <div className="hero--img"></div>
         <p>Hi, I&#39;m Girish.</p>
         <TypeAnimation
           sequence={["I'm a Full stack Developer", 1000]}
