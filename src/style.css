@@ -98,6 +98,7 @@ a {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  text-align: center;
   padding-left: 20px;
   padding-bottom: 30px;
   font-size: 2.1rem;
@@ -106,7 +107,7 @@ a {
 .hero--img {
   height: 270px;
   aspect-ratio: 1/1;
-  background-image: url("./assets/images/hero-aft.svg");
+  background-image: url("./assets/images/hero-bef.svg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
@@ -116,7 +117,7 @@ a {
 }
 
 .hero--img:hover {
-  background-image: url("./assets/images/hero-bef.svg");
+  background-image: url("./assets/images/hero-aft.svg");
   transform: scale(0.4);
   transition: 0.4s;
 }
@@ -316,6 +317,26 @@ footer a {
 
 /* media queries */
 @media screen and (max-width: 620px) {
+  /* header */
+
+  .header--title,
+  .header--home {
+    margin: 0;
+    width: fit-content;
+  }
+
+  .nav--item {
+    margin: 0 30px;
+    margin-top: 10px;
+  }
+
+  .navbar p,
+  .header--title p {
+    visibility: hidden;
+  }
+
+  /* project */
+
   .project--card {
     width: 100%;
   }
@@ -323,6 +344,9 @@ footer a {
   .project--container {
     padding: 0 50px;
   }
+
+  /* contact */
+
   .contact--items {
     flex-direction: column;
   }
@@ -330,17 +354,26 @@ footer a {
     margin: 10px auto;
     width: 120px;
   }
-  .nav--item {
-    margin: 0 30px;
-    margin-top: 10px;
+
+  /* home */
+
+  .home--hero {
+    width: 100%;
+    height: fit-content;
+    padding: 0;
+    padding-top: 90px;
   }
 
-  .navbar p {
-    visibility: hidden;
+  .home--container {
+    width: 100%;
+    height: fit-content;
+    padding: 80px 0;
   }
 }
 
 @media screen and (min-width: 620px) and (max-width: 992px) {
+  /* project */
+
   .project--card {
     width: 100%;
   }
@@ -349,6 +382,8 @@ footer a {
     padding: 0 75px;
   }
 
+  /* contact */
+
   .contact--items {
     flex-direction: column;
   }
@@ -359,5 +394,12 @@ footer a {
   .nav--item {
     margin: 0 30px;
     margin-top: 10px;
+  }
+
+  /* home */
+
+  .home--container,
+  .home--hero {
+    padding: 100px 0;
   }
 }
