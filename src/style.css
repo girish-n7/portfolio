@@ -22,6 +22,7 @@ a {
   color: black;
   font-weight: 600;
   transition: 0.2s;
+  cursor: pointer;
 }
 
 /* header */
@@ -153,11 +154,11 @@ a {
 .button {
   width: 90%;
   margin-top: 12px;
-  cursor: pointer;
   transition: 0.2s;
 }
 
 /* project */
+
 .project--container,
 .project--individual__container {
   margin: 120px 0px;
@@ -177,6 +178,7 @@ a {
   padding: 20px;
   margin-bottom: 30px;
   height: 500px;
+  /* height: fit-content; */
   width: 45%;
 }
 
@@ -200,6 +202,8 @@ a {
 }
 
 .project--desc {
+  height: 13%;
+  min-height: fit-content;
   font-size: 1.1rem;
   margin: 10px 0;
   text-align: justify;
@@ -225,10 +229,69 @@ a {
   height: 100%;
   aspect-ratio: 1/1;
   font-size: 1rem;
-  cursor: pointer;
+}
+
+/* project info */
+
+.project--boundary {
+  height: fit-content;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  border: 2px solid #00ff19;
+  border-radius: 7.5px;
+}
+
+.project--img__individual {
+  width: 100%;
+  aspect-ratio: 2/1;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 7.5px;
+}
+
+.project--content {
+  width: 100%;
+  height: 100%;
+  padding: 1%;
+  opacity: 0;
+  transition: 0.2s;
+}
+
+.project--content:hover {
+  opacity: 1;
+  backdrop-filter: brightness(0.3);
+  padding: 10%;
+  transition: 0.5s;
+}
+
+.project--head__individual {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+.project--img__individual * {
+  background-color: transparent;
+}
+
+.button--individual {
+  width: 20%;
+  padding: 7px;
+  margin: 10px;
+  font-size: 1.1rem;
+  border-radius: 5px;
+  background-color: #00ff1a2c;
+  font-weight: 550;
+  border-color: #00ff19;
 }
 
 /* about */
+
 .about--container {
   position: static;
   font-size: 1.5rem;
@@ -285,7 +348,6 @@ a {
   padding: 8px 16px;
   border: 2px solid #00ff19;
   border-radius: 5px;
-  cursor: pointer;
 }
 
 /* footer */
@@ -332,17 +394,26 @@ footer a {
 
   .navbar p,
   .header--title p {
-    visibility: hidden;
+    display: none;
   }
 
   /* project */
 
   .project--card {
     width: 100%;
+    height: fit-content;
   }
 
   .project--container {
     padding: 0 50px;
+  }
+
+  .project--desc {
+    height: fit-content;
+  }
+
+  .project--info {
+    display: none;
   }
 
   /* contact */
@@ -376,6 +447,7 @@ footer a {
 
   .project--card {
     width: 100%;
+    height: fit-content;
   }
 
   .project--container {

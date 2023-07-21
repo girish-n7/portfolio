@@ -6,7 +6,8 @@ export default function ProjectsPage() {
   const projectMap = data.map((data) => {
     return (
       <ProjectCard
-        key={data.id}
+        key={data._id}
+        id={data._id}
         name={data.name}
         description={data.description}
         liveSnapshot={data.liveSnapshot}

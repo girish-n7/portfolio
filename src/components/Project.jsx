@@ -3,6 +3,7 @@
 import { Link } from "react-router-dom";
 
 export default function ProjectCard({
+  id,
   name,
   description,
   liveSnapshot,
@@ -20,9 +21,9 @@ export default function ProjectCard({
       <div className="project--head">
         <p className="project--title">{name}</p>
 
-        <Link to={"/project-info"}>
+        <Link to={`/project-info/${id}`}>
           <button
-            className="btnHover project--info"
+            className="btnHover project--info disable"
             title="Click here to view project information"
           >
             i
