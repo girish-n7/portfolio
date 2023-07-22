@@ -1,9 +1,7 @@
 /* eslint-disable react/prop-types */
 // import * as React from "react";
-import { Link } from "react-router-dom";
 
 export default function ProjectCard({
-  id,
   name,
   description,
   liveSnapshot,
@@ -20,15 +18,6 @@ export default function ProjectCard({
       ></img>
       <div className="project--head">
         <p className="project--title">{name}</p>
-
-        <Link to={`/project-info/${id}`}>
-          <button
-            className="btnHover project--info disable"
-            title="Click here to view project information"
-          >
-            i
-          </button>
-        </Link>
       </div>
       <p className="project--desc">{description}</p>
       <div className="button--container">

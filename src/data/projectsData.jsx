@@ -16,4 +16,20 @@ export let data = [
     liveLink: "https://girish-n7.github.io/summarizer/",
     gitHubLink: "https://github.com/girish-n7/summarizer",
   },
+  {
+    _id: 3,
+    name: "AI Chatbot",
+    description: "Project description",
+    liveSnapshot: "https://i.imgur.com/ioTeKuS.png",
+    liveLink: "",
+    gitHubLink: "https://github.com/girish-n7/",
+  },
+  {
+    _id: 4,
+    name: "Project 4",
+    description: "Project description",
+    liveSnapshot: "https://i.imgur.com/ioTeKuS.png",
+    liveLink: "",
+    gitHubLink: "https://github.com/girish-n7/",
+  },
 ];

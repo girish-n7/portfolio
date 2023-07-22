@@ -160,7 +160,7 @@ a {
 /* project */
 
 .project--container,
-.project--individual__container {
+.project--container__large {
   margin: 120px 0px;
   display: flex;
   flex-wrap: wrap;
@@ -172,13 +172,16 @@ a {
   animation-fill-mode: forwards;
 }
 
+.project--container {
+  display: none;
+}
+
 .project--card {
   border-radius: 7.5px;
   border: 2px solid #00ff19;
   padding: 20px;
   margin-bottom: 30px;
-  height: 500px;
-  /* height: fit-content; */
+  height: fit-content;
   width: 45%;
 }
 
@@ -189,6 +192,7 @@ a {
 }
 
 .button--container .button {
+  min-width: fit-content;
   width: 40%;
   padding: 7px;
   margin: 10px;
@@ -202,6 +206,7 @@ a {
 }
 
 .project--desc {
+  display: none;
   height: 13%;
   min-height: fit-content;
   font-size: 1.1rem;
@@ -220,31 +225,22 @@ a {
   flex-wrap: wrap;
   justify-content: space-between;
   padding-right: 20px;
-  margin-top: 10px;
+  margin: 10px 0;
 }
-
-.project--info {
-  border-radius: 50%;
-  border-color: #00ff19;
-  height: 100%;
-  aspect-ratio: 1/1;
-  font-size: 1rem;
-}
-
-/* project info */
 
 .project--boundary {
   height: fit-content;
-  width: 80%;
+  width: 47.5%;
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-bottom: 30px;
   padding: 20px;
   border: 2px solid #00ff19;
   border-radius: 7.5px;
 }
 
-.project--img__individual {
+.project--img__large {
   width: 100%;
   aspect-ratio: 2/1;
   background-position: center;
@@ -256,26 +252,26 @@ a {
 .project--content {
   width: 100%;
   height: 100%;
-  padding: 1%;
+  padding: 0%;
   opacity: 0;
   transition: 0.2s;
 }
 
 .project--content:hover {
   opacity: 1;
-  backdrop-filter: brightness(0.3);
-  padding: 10%;
+  backdrop-filter: brightness(0.6) blur(2px);
+  padding: 5%;
   transition: 0.5s;
 }
 
-.project--head__individual {
+.project--head__large {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 10px;
 }
 
-.project--img__individual * {
+.project--img__large * {
   background-color: transparent;
 }
 
@@ -398,6 +394,13 @@ footer a {
   }
 
   /* project */
+  .project--container {
+    display: flex;
+  }
+
+  .project--container__large {
+    display: none;
+  }
 
   .project--card {
     width: 100%;
@@ -409,7 +412,11 @@ footer a {
   }
 
   .project--desc {
+    display: block;
     height: fit-content;
+    font-size: 1.1rem;
+    margin: 10px 0;
+    text-align: justify;
   }
 
   .project--info {
@@ -417,6 +424,11 @@ footer a {
   }
 
   /* contact */
+
+  .contact--container {
+    max-width: 400px;
+    width: 85%;
+  }
 
   .contact--items {
     flex-direction: column;
@@ -444,6 +456,13 @@ footer a {
 
 @media screen and (min-width: 620px) and (max-width: 992px) {
   /* project */
+  .project--container {
+    display: flex;
+  }
+
+  .project--container__large {
+    display: none;
+  }
 
   .project--card {
     width: 100%;
@@ -452,6 +471,18 @@ footer a {
 
   .project--container {
     padding: 0 75px;
+  }
+
+  .project--desc {
+    display: block;
+    height: fit-content;
+    font-size: 1.1rem;
+    margin: 10px 0;
+    text-align: justify;
+  }
+
+  .project--info {
+    display: none;
   }
 
   /* contact */
