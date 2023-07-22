@@ -5,7 +5,6 @@ import Contact from "./Contact";
 import Home from "./Home";
 import ProjectsPage from "./ProjectsPage";
 import Error from "./Error";
-import ProjectInfo from "./ProjectInfo";
 
 const SwitchPage = () => {
   return (
@@ -13,7 +12,6 @@ const SwitchPage = () => {
       <Route exact path="/" element={<Home />}></Route>
       <Route exact path="/about" element={<About />}></Route>
       <Route exact path="/contact" element={<Contact />}></Route>
-      <Route exact path="/project-info/:id" element={<ProjectInfo />}></Route>
       <Route exact path="/projects" element={<ProjectsPage />}></Route>
       <Route path="*" element={<Error />} />
     </Routes>
