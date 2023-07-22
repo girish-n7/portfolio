@@ -1,4 +1,3 @@
-// import React from "react"
 import ProjectCard from "./Project";
 import ProjectLarge from "./ProjectLarge";
 import { data } from "../data/projectsData";

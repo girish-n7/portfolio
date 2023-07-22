@@ -1,4 +1,6 @@
-// import React from "react";
+import gitHubLogo from "../assets/images/gitHub.svg";
+import linkedInLogo from "../assets/images/linkedIn.svg";
+import emailLogo from "../assets/images/email.svg";
 
 export default function Footer() {
   const gitHub = "https://github.com/girish-n7";
@@ -10,13 +12,13 @@ export default function Footer() {
       <p className="footer--content">
         © 2023. Made by Girish N{" "}
         <a href={linkedIn} title="LinkedIn">
-          <i className="fa-brands fa-linkedin-in fa-lg icon"></i>
+          <img src={linkedInLogo} className="footer--logo" alt=""></img>
         </a>
         <a href={gitHub} title="GitHub">
-          <i className="fa-brands fa-github fa-lg icon"></i>
+          <img src={gitHubLogo} className="footer--logo" alt=""></img>
         </a>
         <a href={email} title="email">
-          <i className="fa-solid fa-envelope fa-lg icon"></i>
+          <img src={emailLogo} className="footer--logo" alt=""></img>
         </a>
       </p>
     </footer>

@@ -57,9 +57,8 @@ a {
   font-size: 1.2rem;
 }
 
-.nav--item {
-  margin: 0 50px;
-  margin-top: 10px;
+.home--logo {
+  height: 2.2rem;
 }
 
 /* error */
@@ -353,15 +352,25 @@ footer {
   bottom: 0;
   left: 0;
   right: 0;
-  text-align: center;
   z-index: 2;
 }
 
 .footer--content,
 footer a {
   font-size: 1rem;
-  padding: 10px;
-  background-color: transparent;
+  margin: 0 auto;
+  padding: 5px;
+  display: flex;
+  width: fit-content;
+  align-items: baseline;
+}
+
+footer a {
+  padding-left: 10px;
+}
+
+.footer--logo {
+  height: 1.2rem;
 }
 
 @keyframes fadeIn {

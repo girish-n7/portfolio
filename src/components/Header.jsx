@@ -1,6 +1,6 @@
-// import React from "react";
 import { Link } from "react-router-dom";
 import logo from "../assets/images/logo.png";
+import homeLogo from "../assets/images/home.svg";
 
 export default function Header() {
   return (
@@ -12,8 +12,8 @@ export default function Header() {
 
       <div className="navbar">
         <div className="header--home">
-          <Link to="/" className="nav--item">
-            <i className="fa fa-home fa-lg" aria-hidden="true" alt="home"></i>
+          <Link to="/">
+            <img src={homeLogo} className="home--logo" alt=""></img>
           </Link>
           <p>Back to Home</p>
         </div>
