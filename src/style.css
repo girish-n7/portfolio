@@ -290,13 +290,49 @@ a {
 .about--container {
   position: static;
   font-size: 1.5rem;
-  margin: 100px 0;
+  margin: 100px 50px;
   padding: 30px 70px;
   height: 100%;
   width: auto;
   opacity: 0;
   animation: fadeIn 0.9s 1;
   animation-fill-mode: forwards;
+}
+
+.about--intro {
+  font-size: 1.4rem;
+  line-height: 150%;
+  padding-top: 50px;
+}
+
+.about--hr {
+  border: 1px solid #00ff19;
+  margin: 20px 0;
+}
+
+.skills--title {
+  font-weight: 550;
+  margin: 20px auto;
+}
+
+.skill--list {
+  display: flex;
+  flex-wrap: wrap;
+  width: 80%;
+  margin: 20px auto;
+  justify-content: space-around;
+  padding: 10px;
+}
+
+.skill--item {
+  cursor: pointer;
+  transition: 0.2s;
+  margin: 10px;
+}
+
+.skill--item:hover {
+  transform: scale(1.8);
+  transition: 0.3s;
 }
 
 /* contact */
@@ -376,9 +412,11 @@ footer a {
 @keyframes fadeIn {
   0% {
     opacity: 0;
+    scale: 0.8 1;
   }
   100% {
     opacity: 1;
+    scale: 1 1;
   }
 }
 
@@ -461,6 +499,29 @@ footer a {
     height: fit-content;
     padding: 80px 0;
   }
+
+  /* about */
+
+  .about--container {
+    margin: 80px 0;
+  }
+
+  .about--intro {
+    padding-top: 0;
+  }
+
+  .skill--list {
+    width: 95%;
+  }
+
+  .skill--item {
+    width: 35%;
+    padding: 2.5%;
+  }
+
+  .skill--item:hover {
+    transform: scale(1.2);
+  }
 }
 
 @media screen and (min-width: 620px) and (max-width: 992px) {
@@ -513,5 +574,28 @@ footer a {
   .home--container,
   .home--hero {
     padding: 100px 0;
+  }
+
+  /* about */
+
+  .about--container {
+    margin: 80px 0;
+  }
+
+  .about--intro {
+    padding-top: 0;
+  }
+
+  .skill--list {
+    width: 80%;
+  }
+
+  .skill--item {
+    width: 26%;
+    padding: 3%;
+  }
+
+  .skill--item:hover {
+    transform: scale(1.2);
   }
 }
