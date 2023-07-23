@@ -504,6 +504,7 @@ footer a {
 
   .about--container {
     margin: 80px 0;
+    padding: 30px;
   }
 
   .about--intro {
@@ -516,7 +517,7 @@ footer a {
 
   .skill--item {
     width: 35%;
-    padding: 2.5%;
+    padding: 4.5%;
   }
 
   .skill--item:hover {
