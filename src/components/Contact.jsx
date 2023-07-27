@@ -10,7 +10,7 @@ export default function Contact() {
         <input
           type="text"
           className="contact--input"
-          name="contact--name"
+          name="contactName"
           placeholder="Name"
           autoFocus
           required
@@ -19,7 +19,7 @@ export default function Contact() {
         <input
           type="email"
           className="contact--input"
-          name="contact--mail"
+          name="contactMail"
           placeholder="e-mail"
           required
           autoComplete="false"
@@ -28,7 +28,7 @@ export default function Contact() {
         <input
           type="text"
           className="contact--input"
-          name="contact--subject"
+          name="contactSubject"
           placeholder="Message Subject"
           required
           autoComplete="false"
@@ -37,7 +37,7 @@ export default function Contact() {
           rows={5}
           type="text"
           className="contact--input"
-          name="contact--message"
+          name="contactMessage"
           placeholder="Message"
           required
           autoComplete="false"
