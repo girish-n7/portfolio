@@ -7,6 +7,7 @@ import Error from "./Error";
 
 const SwitchPage = () => {
   return (
+    // define components to render for respective routes
     <Routes key={location.pathname}>
       <Route exact path="/" element={<Home />}></Route>
       <Route exact path="/about" element={<About />}></Route>

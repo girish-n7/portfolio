@@ -8,6 +8,7 @@ export default function ProjectCard({
   gitHubLink,
 }) {
   return (
+    // dynamically generate project cards for small and medium screens
     <div className="project--card">
       <img
         className="project--img"
@@ -42,3 +43,5 @@ export default function ProjectCard({
     </div>
   );
 }
+
+// used window.location.href to redirect the user to respective web address using onClick event (can also use Link)

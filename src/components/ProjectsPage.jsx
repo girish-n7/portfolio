@@ -3,6 +3,7 @@ import ProjectLarge from "./ProjectLarge";
 import { data } from "../data/projectsData";
 
 export default function ProjectsPage() {
+  // map the data array imported to the ProjectCard component to dynamically generate cards
   const projectMap = data.map((data) => {
     return (
       <ProjectCard
@@ -16,6 +17,8 @@ export default function ProjectsPage() {
       />
     );
   });
+
+  // same process for large screens
   const projectLargeMap = data.map((data) => {
     return (
       <ProjectLarge

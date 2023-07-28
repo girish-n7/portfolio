@@ -3,6 +3,8 @@ import { TypeAnimation } from "react-type-animation";
 
 export default function Home() {
   return (
+    // hero section of the homepage (floating left)
+
     <div className="home--main">
       <div className="home--hero">
         <div className="hero--img"></div>
@@ -12,6 +14,9 @@ export default function Home() {
           speed={5}
         />
       </div>
+
+      {/* actual home section of the hompage (float right) */}
+
       <div className="home--container">
         <p className="home--question">What do you want to do?</p>
         <div className="home--options">

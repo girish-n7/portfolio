@@ -8,6 +8,8 @@ export default function Footer() {
   const email = "mailto: ngirish1729@gmail.com";
 
   return (
+    // basic anchor tags with respective svg/images
+
     <footer>
       <p className="footer--content">
         © 2023. Made by Girish N{" "}

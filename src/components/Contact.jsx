@@ -1,5 +1,7 @@
 export default function Contact() {
   return (
+    // basic inputs and form with POST method calling the personal conatctAPI
+
     <form
       action="https://contact-api-girish-n7.vercel.app/"
       id="contact--form"

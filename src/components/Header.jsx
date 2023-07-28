@@ -3,6 +3,8 @@ import logo from "../assets/images/logo.png";
 import homeLogo from "../assets/images/home.svg";
 
 export default function Header() {
+  //basic header component
+
   return (
     <div className="header--container">
       <div className="header--title">

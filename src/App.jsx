@@ -6,6 +6,7 @@ export default function App() {
   return (
     <div>
       <Header />
+      {/* SwitcgPage component to dynamiccaly display the correct components based on requested routes */}
       <SwitchPage />
       <Footer />
     </div>

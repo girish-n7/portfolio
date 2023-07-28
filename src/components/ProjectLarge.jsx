@@ -11,6 +11,9 @@ export default function ProjectLarge({
     backgroundImage: `url(${liveSnapshot})`,
   };
   return (
+    // dynamically generate the project cards for larger screens
+    // used window.location.href to redirect the user to respective web address using onClick event (can also use Link)
+
     <div className="project--boundary">
       <div className="project--img__large" style={projectImgStyle}>
         <div className="project--content">
