@@ -9,7 +9,7 @@ export default function About() {
   return (
     // basic paragraphs and image importing
 
-    <div className="about--container">
+    <div className="about--container page--transition">
       <p className="about--intro">
         Hello there! My name is Girish. I&#39;m a web developer with a passion
         for front-end technologies.

@@ -34,8 +34,10 @@ export default function ProjectsPage() {
 
   return (
     <div className="project--main">
-      <div className="project--container">{projectMap}</div>;
-      <div className="project--container__large">{projectLargeMap}</div>
+      <div className="project--container page--transition">{projectMap}</div>;
+      <div className="project--container__large page--transition">
+        {projectLargeMap}
+      </div>
     </div>
   );
 }

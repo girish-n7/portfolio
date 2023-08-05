@@ -7,7 +7,7 @@ export default function Contact() {
       id="contact--form"
       method="POST"
     >
-      <div className="contact--container">
+      <div className="contact--container page--transition">
         <p className="contact--head">CONTACT ME</p>
         <input
           type="text"

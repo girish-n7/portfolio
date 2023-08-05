@@ -5,7 +5,7 @@ export default function Home() {
   return (
     // hero section of the homepage (floating left)
 
-    <div className="home--main">
+    <div className="home--main page--transition">
       <div className="home--hero">
         <div className="hero--img"></div>
         <p>Hi, I&#39;m Girish.</p>
