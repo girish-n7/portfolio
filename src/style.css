@@ -151,7 +151,7 @@ a {
 }
 
 .button {
-  width: 90%;
+  width: 70%;
   margin-top: 12px;
   transition: 0.2s;
 }
@@ -489,6 +489,10 @@ footer a {
     padding: 80px 0;
   }
 
+  .button {
+    width: 90%;
+  }
+
   /* about */
 
   .about--container {
@@ -564,6 +568,10 @@ footer a {
   .home--container,
   .home--hero {
     padding: 100px 0;
+  }
+
+  .button {
+    width: 90%;
   }
 
   /* about */
