@@ -10,12 +10,14 @@ export default function ProjectLarge({
   liveLink,
   gitHubLink,
 }) {
+  //set the img based on projectData input
   const selectImg =
     liveSnapshot === "portfolioImg"
       ? portfolioImg
       : liveSnapshot === "summarizerImg"
       ? summarizerImg
       : chatbotImg;
+
   const projectImgStyle = {
     backgroundImage: `url(${selectImg})`,
   };
