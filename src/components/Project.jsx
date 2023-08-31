@@ -1,5 +1,9 @@
 /* eslint-disable react/prop-types */
 
+import portfolioImg from "../assets/live_snapshot/portfolio_live.png";
+import summarizerImg from "../assets/live_snapshot/summarizer_live.png";
+import chatbotImg from "../assets/live_snapshot/chatbot_live.png";
+
 export default function ProjectCard({
   name,
   description,
@@ -7,15 +11,18 @@ export default function ProjectCard({
   liveLink,
   gitHubLink,
 }) {
+  //select image based on projectData input
+  const selectImg =
+    liveSnapshot === "portfolioImg"
+      ? portfolioImg
+      : liveSnapshot === "summarizerImg"
+      ? summarizerImg
+      : chatbotImg;
+
   return (
     // dynamically generate project cards for small and medium screens
     <div className="project--card">
-      <img
-        className="project--img"
-        src={liveSnapshot}
-        alt=""
-        loading="lazy"
-      ></img>
+      <img className="project--img" src={selectImg} alt="" loading="lazy"></img>
       <div className="project--head">
         <p className="project--title">{name}</p>
       </div>

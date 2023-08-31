@@ -207,7 +207,6 @@ a {
   min-height: fit-content;
   font-size: 1.1rem;
   margin: 10px 0;
-  text-align: justify;
 }
 
 .project--img {
@@ -452,7 +451,6 @@ footer a {
     height: fit-content;
     font-size: 1.1rem;
     margin: 10px 0;
-    text-align: justify;
   }
 
   .project--info {
@@ -542,7 +540,6 @@ footer a {
     height: fit-content;
     font-size: 1.1rem;
     margin: 10px 0;
-    text-align: justify;
   }
 
   .project--info {

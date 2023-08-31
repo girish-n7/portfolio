@@ -1,10 +1,10 @@
 import ProjectCard from "./Project";
 import ProjectLarge from "./ProjectLarge";
-import { data } from "../data/projectsData";
+import { fullStackProjects } from "../data/projectsData";
 
 export default function ProjectsPage() {
   // map the data array imported to the ProjectCard component to dynamically generate cards
-  const projectMap = data.map((data) => {
+  const projectMap = fullStackProjects.map((data) => {
     return (
       <ProjectCard
         key={data._id}
@@ -19,7 +19,7 @@ export default function ProjectsPage() {
   });
 
   // same process for large screens
-  const projectLargeMap = data.map((data) => {
+  const projectLargeMap = fullStackProjects.map((data) => {
     return (
       <ProjectLarge
         key={data._id}
