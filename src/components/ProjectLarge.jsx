@@ -28,8 +28,9 @@ export default function ProjectLarge({
     <div className="project--boundary">
       <div className="project--img__large" style={projectImgStyle}>
         <div className="project--content">
-          <div className="project--head__large">
-            <p className="project--title">{name}</p>
+          <p className="project--title">{name}</p>
+          <p className="project--desc__large">{description}</p>
+          <div className="project--buttons">
             <button
               className="btnHover button--individual"
               title="Go to GitHub"
@@ -49,7 +50,6 @@ export default function ProjectLarge({
               Live Link
             </button>
           </div>
-          <p className="project--desc__large">{description}</p>
         </div>
       </div>
     </div>
