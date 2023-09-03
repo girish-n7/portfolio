@@ -4,7 +4,7 @@ let fullStackProjects = [
     name: "Personal Portfolio",
     description:
       "A standout portfolio project showcasing my skills in web development, featuring interactive and responsive designs, seamless navigation, and a seamless blend of front-end and back-end technologies.",
-    liveSnapshot: "portfolioImg",
+    liveSnapshot: "portfolio_live",
     liveLink: "https://girish-n7.github.io/portfolio/",
     gitHubLink: "https://github.com/girish-n7/portfolio",
   },
@@ -13,19 +13,26 @@ let fullStackProjects = [
     name: "Summarizer",
     description:
       "User-friendly and responsive web application that efficiently condenses lengthy content into concise summaries, enhancing information accessibility and user convenience.",
-    liveSnapshot: "summarizerImg",
+    liveSnapshot: "summarizer_live",
     liveLink: "https://girish-n7.github.io/summarizer/",
     gitHubLink: "https://github.com/girish-n7/summarizer",
   },
-
   {
     _id: 3,
     name: "AI Chatbot",
     description:
       "An AI chatbot infused with the distinctive speech style of Batman, creating a unique and immersive conversational experience.",
-    liveSnapshot: "chatbot_liveImg",
+    liveSnapshot: "chatbot_live",
     liveLink: "https://girish-n7.github.io/chatbot/",
     gitHubLink: "https://github.com/girish-n7/chatbot",
+  },
+  {
+    _id: 4,
+    name: "Project 4",
+    description: "Work in progress",
+    liveSnapshot: "",
+    liveLink: "https://girish-n7.github.io/",
+    gitHubLink: "https://github.com/girish-n7/",
   },
 ];
 
