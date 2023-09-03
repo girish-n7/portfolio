@@ -1,5 +1,9 @@
 /* eslint-disable react/prop-types */
 
+import chatbot from "../assets/live_snapshot/chatbot_live.png";
+import portfolio from "../assets/live_snapshot/portfolio_live.png";
+import summarizer from "../assets/live_snapshot/summarizer_live.png";
+
 export default function ProjectSmall({
   name,
   description,
@@ -8,7 +12,14 @@ export default function ProjectSmall({
   gitHubLink,
 }) {
   //select image based on projectData input
-  const selectImg = `./src/assets/live_snapshot/${liveSnapshot}.png`;
+  let selectImg =
+    liveSnapshot === "portfolio"
+      ? portfolio
+      : liveSnapshot === "summarizer"
+      ? summarizer
+      : liveSnapshot === "chatbot"
+      ? chatbot
+      : null;
 
   return (
     // dynamically generate project cards for small and medium screens

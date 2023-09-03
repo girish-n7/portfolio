@@ -1,5 +1,9 @@
 /* eslint-disable react/prop-types */
 
+import chatbot from "../assets/live_snapshot/chatbot_live.png";
+import portfolio from "../assets/live_snapshot/portfolio_live.png";
+import summarizer from "../assets/live_snapshot/summarizer_live.png";
+
 export default function ProjectLarge({
   name,
   description,
@@ -7,8 +11,15 @@ export default function ProjectLarge({
   liveLink,
   gitHubLink,
 }) {
-  //file path for project live images
-  const selectImg = `./src/assets/live_snapshot/${liveSnapshot}.png`;
+  //select image based on projectData input
+  let selectImg =
+    liveSnapshot === "portfolio"
+      ? portfolio
+      : liveSnapshot === "summarizer"
+      ? summarizer
+      : liveSnapshot === "chatbot"
+      ? chatbot
+      : null;
 
   const projectImgStyle = {
     backgroundImage: `url(${selectImg})`,
